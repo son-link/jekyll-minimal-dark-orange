@@ -4,13 +4,16 @@ title: About
 permalink: /about/
 ---
 
-[Jekyll-minimal-dark-orange]((https://son-link.github.io/jekyll-minimal-dark-orange) is my new Jekyll theme for my [blog (in spanish)](https://son-link.github.io)
+[Jekyll-minimal-dark-orange](https://son-link.github.io/jekyll-minimal-dark-orange) is my new Jekyll theme for my [blog (in spanish)](https://son-link.github.io)
 
 This theme is lighwight and responsive, including tables, images, videos and iframes, like **Youtube** and **Vimeo**
 
 Include support for jekyll-seo-tag, Google Analytics, and include links on any post for share on various social networks, WhatsApp and Telegram.
 
-![GitHub All Releases](https://img.shields.io/github/downloads/son-link/jekyll-minimal-dark-orange/total?style=flat-square)
+![GitHub All Releases](https://img.shields.io/github/downloads/son-link/jekyll-minimal-dark-orange/total?style=flat-square&label=Github%20downloads)
+![Gem](https://img.shields.io/gem/dt/jekyll-minimal-dark-orange?label=GEM%20downloads&style=flat-square)
+
+![Capture](/screenshot.png)
 
 ## Installation
 
