@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-minimal-dark-orange"
-  spec.version       = "0.1.0"
+  spec.version       = "1.0.0"
   spec.authors       = ["Alfonso Saavedra \"Son Link\""]
   spec.email         = ["sonlink.dourden@gmail.com"]
 
   spec.summary       = "A simple and mininalistic theme for Jekyll"
-  spec.homepage      = "https://son-link.github.io"
+  spec.homepage      = "https://son-link.github.io/jekyll-minimal-dark-orange"
   spec.license       = "GPL3"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
