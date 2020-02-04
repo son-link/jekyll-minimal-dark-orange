@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<link rel="stylesheet" type="text/css" href="{{ '/assets/css/fontello-embedded.css' | absolute_url }}" />
+		<link rel="stylesheet" type="text/css" href="{{ '/assets/css/syntax.css' | absolute_url }}" />
+		<link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | absolute_url }}" />
+		<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}" />
+		<!-- Check if jekyll-seo-tag plugin is activated -->
+		{% if site.plugins contains 'jekyll-seo-tag' %}
+			{% seo %}
+		{% endif %}
+		<!-- If user add her Google Analytics code include the file for use -->
+		{% if site.google-analytics %}
+			{% include google-analytics.html %}
+		{% endif %}
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<div class="navbar">
+					<div>
+						<div id="site-desc">
+							<a href="{{ site.url }}"><span id="site-title">{{ site.title }}</span></a>
+							{{ site.description }}
+						</div>
+						<div id="social_links">
+							{%- include social_links.html -%}
+						</div>
+						<div id="search" class="header-section">
+							<input type="search" id="search-input" placeholder="Search..."/>
+							<button id="search-btn" class="icon-search"></button>
+							<div id="search-div">
+								<a class="icon-cancel" id="close-search"></a>
+								<div id="search-results"></div>
+							</div>
+						</div>
+						<a id="toggle_nav" class="icon-menu"></a>
+						<div id="main-nav">
+							{% for p in site.pages %}
+								{% if p.title and p.onmenu != false %}
+									<a class="nav-page" href="{{ p.url | absolute_url }}">{{ p.title }}</a>
+								{% endif %}
+							{% endfor %}
+						</div>
+					</nav>
+				</div>
+			</header>
+			<div id="content">
+				
+			
